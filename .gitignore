@@ -1,0 +1,16 @@
+# Ignore build directories
+/build/
+/build-*/
+
+# Ignore CMake files
+/CMakeCache.txt
+/CMakeFiles/
+/*.cmake
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.swp
+
+# Ignore system files
+Thumbs.db

@@ -1,0 +1,15 @@
+[submodule "ros2_raspberry_pi_5"]
+	path = ros2_raspberry_pi_5
+	url = https://github.com/ozandmrz/ros2_raspberry_pi_5
+[submodule "Pangolin"]
+	path = Pangolin
+	url = https://github.com/stevenlovegrove/Pangolin.git
+[submodule "ORB_SLAM3_Ubuntu20.04"]
+	path = ORB_SLAM3_Ubuntu20.04
+	url = https://github.com/egdw/ORB_SLAM3_Ubuntu20.04
+[submodule "opencv"]
+	path = opencv
+	url = https://github.com/opencv/opencv.git
+[submodule "opencv_contrib"]
+	path = opencv_contrib
+	url = https://github.com/opencv/opencv_contrib.git
