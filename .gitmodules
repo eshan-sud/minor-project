@@ -13,3 +13,6 @@
 [submodule "opencv_contrib"]
 	path = opencv_contrib
 	url = https://github.com/opencv/opencv_contrib.git
+[submodule "ORB_SLAM3/src/orb_slam3_ros2_mono_publisher"]
+	path = ORB_SLAM3/src/orb_slam3_ros2_mono_publisher
+	url = https://github.com/ozandmrz/orb_slam3_ros2_mono_publisher.git
