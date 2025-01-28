@@ -15,8 +15,15 @@
 # Ignore system files
 Thumbs.db
 
+# Repos
+OpenCV/
+ORB_SLAM3/
+Pangolin/
+ROS2_WS/
+ros2_raspberry_pi_5/
+
 # Datasets
-Dataset/
+Datasets/
 
 # Remove SSH Keys
 id_rsa
