@@ -19,8 +19,8 @@ Thumbs.db
 OpenCV/
 ORB_SLAM3/
 Pangolin/
-ROS2_WS/
-ros2_raspberry_pi_5/
+ROS2/
+
 
 # Datasets
 Datasets/

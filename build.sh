@@ -1,14 +1,19 @@
 
 # Clone required repositories
+#echo "Cloning required repositories..."
 #mkdir -p ~/minor-project/OpenCV
+#mkdir -p ~/minor-project/ROS2/src
+#mkdir -p ~/minor-project/ORB_SLAM3/src
 #git clone https://github.com/opencv/opencv.git ~/minor-project/OpenCV/opencv
 #git clone https://github.com/opencv/opencv_contrib.git ~/minor-project/OpenCV/opencv_contrib
-#git clone https://github.com/ozandmrz/ros2_raspberry_pi_5
+#git clone https://github.com/ozandmrz/ros2_raspberry_pi_5 ~/minor-project/ROS2/ros2_raspberry_pi_5
+#git clone https://github.com/ros-perception/image_common.git ~/minor-project/ROS2/src/image_common
+#git clone https://github.com/ros-perception/vision_opencv.git ~/minor-project/ROS2/src/vision_opencv
 #git clone --recursive https://github.com/stevenlovegrove/Pangolin.git
-#mkdir -p ~/minor-project/ORB_SLAM3/src
 #git clone https://github.com/egdw/ORB_SLAM3_Ubuntu20.04 ~/minor-project/ORB_SLAM3/ORB_SLAM3_Ubuntu20.04
 #git clone https://github.com/ozandmrz/orb_slam3_ros2_mono_publisher.git \
 #~/minor-project/ORB_SLAM3/src/orb_slam3_ros2_mono_publisher
+#echo "Required repositories cloned"
 
 
 # Install dependencies
@@ -22,7 +27,6 @@
 #libglew-dev python3-dev  libboost-python-dev libsdl2-dev mesa-utils glew-utils \
 #libepoxy-dev software-properties-common libboost-serialization-dev libeigen3-dev \
 #libsuitesparse-dev libboost-all-dev cmake g++ libpangolin-dev libssl-dev
-
 #echo "Dependencies installed"
 
 
@@ -71,8 +75,8 @@
 
 
 # Install ROS2 (Humble Hawksbill)
-#echo "Starting installation of ROS2..."
-#cd ros2_raspberry_pi_5
+#echo "Starting installations of ROS2 (Humble Hawksbill)..."
+#cd ROS2/ros2_raspberry_pi_5
 #chmod +x ros2_humble_install.sh
 #./ros2_humble_install.sh
 #echo "source ~/ros2_humble/install/local_setup.bash" >> ~/.bashrc
@@ -80,9 +84,38 @@
 #sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-keys F42ED6FBAB17C654
 #echo "deb http://repo.ros2.org/ubuntu/main bookworm main" | sudo tee /etc/apt/sources.list.d/ros2.list
 #sudo apt update
-#sudo apt install python3-pip python3-setuptools python3-colour python3-rosdep python3-ament-package libg2o-dev
+#sudo apt upgrade
+#sudo apt install python3-pip python3-setuptools python3-colour python3-rosdep python3-ament-package
+#sudo apt install python3-rospkg-modules python3-rosdistro-modules python3-catkin-pkg-modules
+#sudo dpkg --remove --force-remove-reinstreq python3-rospkg python3-rosdistro python3-catkin-pkg python3-rosdep-modules
+#sudo dpkg --remove --force-all python3-catkin-pkg python3-rosdep-modules
+#sudo dpkg --remove --force-all python3-colcon-ros
+#sudo apt --fix-broken install
+#sudo apt install python3-pip python3-setuptools python3-colour python3-rosdep python3-ament-package
+#sudo apt install python3-rospkg-modules python3-rosdistro-modules python3-catkin-pkg-modules
+#echo "ROS2 installed"
 
-
+# Install Image Transport & CV_Bridge
+#echo "Starting installations of Image Transport & CV_Bridge..."
+#sudo apt update
+#sudo apt install curl gnupg2 lsb-release
+#curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+#sudo sh -c 'echo "deb [arch=amd64] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2.list'
+#sudo apt update
+#sudo apt upgrade -y
+#sudo apt install python3-opencv python3-rospkg libboost-python1.81.0
+#cd ~/minor-project/
+#mkdir -p ROS2/src
+#cd ROS2/src
+#cd image_common
+#git checkout humble
+#cd ..
+#cd vision_opencv/cv_bridge
+#git checkout humble
+#cd ../..
+#colcon build --symlink-install
+#source install/setup.bash
+#echo "Image Transport & CV_Bridge installed"
 
 
 # Install ORB_SLAM3
@@ -109,6 +142,7 @@
 #cmake ..
 #make -j 2
 #rosdep install --from-paths src --ignore-src -r -y
+#echo "ORB_SLAM3 installed"
 
 
 # Downloading the TUM Dataset
@@ -125,25 +159,11 @@
 #echo "TUM Dataset & its Vocabulary installed"
 
 
-# Downloading ROS2
-#echo "Starting installations of ROS2 (Humble Hawksbill)..."
-#cd ~/minor-project
-#cd 
+# Publishing ORB_SLAM3 in ROS2:
+echo "Publishing ORB_SLAM3 in ROS2..."
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+echo "Published ORB_SLAM3 in ROS2"
 
 
 
