@@ -121,10 +121,14 @@
 #wget https://github.com/UZ-SLAMLab/ORB_SLAM3/raw/master/Vocabulary/ORBvoc.txt.tar.gz # Download the Vocabulary
 #tar -xvzf ORBvoc.txt.tar.gz # Extract Vocabulary
 #cd ../Examples/Monocular
-./mono_tum ../../Vocabulary/ORBvoc.txt TUM1.yaml ~/minor-project/Dataset/TUM/rgbd_dataset_freiburg1_desk # Execute the mapping process
+#./mono_tum ../../Vocabulary/ORBvoc.txt TUM1.yaml ~/minor-project/Dataset/TUM/rgbd_dataset_freiburg1_desk # Execute the mapping process
 #echo "TUM Dataset & its Vocabulary installed"
 
 
+# Downloading ROS2
+#echo "Starting installations of ROS2 (Humble Hawksbill)..."
+#cd ~/minor-project
+#cd 
 
 
 
