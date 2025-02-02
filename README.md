@@ -1,24 +1,34 @@
 # 3D Mapping using SLAM
 
-A repository of my learning of Visual &amp; RGB-D SLAM used for 3D mapping of indoor environments with a Raspberry Pi 5 &amp;\
-an External camera
+A repository of my learning of Visual &amp; RGB-D SLAM used for 3D mapping of indoor environments with a \
+Raspberry Pi 5 &amp; an External camera
 
 ## Aim:
-Mapping of indoor environments using RGB-D SLAM algorithm on a Raspberry Pi 5 with a Microsoft Kinect v1 as a camera module and \
-using the RGB camera data along with its depth data to create and visualise a 3D structure of the environment.
+
+Mapping of indoor environments using RGB-D SLAM algorithm on a Raspberry Pi 5 with a Microsoft Kinect v1 \
+as a camera module and using the RGB camera data along with its depth data to create and visualise a 3D structure of the environment.
 
 
 ## References (Repos I have used / taken reference from):
 
-	(OpenCV4): https://github.com/opencv/opencv
-	(OpenCV4 Contrib): https://github.com/opencv/opencv_contrib
-	(ROS2 Image Common): https://github.com/ros-perception/image_common
-	(ROS2 OpenCV): https://github.com/ros-perception/vision_opencv
-	(Pangolin): https://github.com/stevenlovegrove/Pangolin
-	(ORB_SLAM3): https://github.com/egdw/ORB_SLAM3_Ubuntu20.04
-	(ORBS_SLAM3 ROS2 Wrapper): git clone https://github.com/ozandmrz/orb_slam3_ros2_mono_publisher [Forked]
 
-	(Installation of ROS2)2: https://github.com/ozandmrz/ros2_raspberry_pi_5
+	(OpenCV4): https://github.com/opencv/opencv
+
+	(OpenCV4 Contrib): https://github.com/opencv/opencv_contrib
+
+	(ROS2 Image Common): https://github.com/ros-perception/image_common
+
+	(ROS2 OpenCV): https://github.com/ros-perception/vision_opencv
+
+	(Pangolin): https://github.com/stevenlovegrove/Pangolin
+
+	(ORB_SLAM3): https://github.com/egdw/ORB_SLAM3_Ubuntu20.04
+
+	(ORBS_SLAM3 ROS2 Wrapper): https://github.com/ozandmrz/orb_slam3_ros2_mono_publisher	[Forked]
+
+
+
+	(Installation of ROS2): https://github.com/ozandmrz/ros2_raspberry_pi_5
 
 
 ## Software Required
@@ -52,14 +62,27 @@ using the RGB camera data along with its depth data to create and visualise a 3D
 "The build commands in the file build.sh installs all the required software, \
 frameworks and any additional dependencies required by the user automatically"
 
+- Clone the project:
+
+	git clone https://github.com/eshan-sud/minor-project
+
+
 - Run these conmmands on the shell
 
 	cd ~/minor-project/
+
 	chmod +x build.sh
- 	./build.sh
- 		- When prompted to choose mode when changin GCC version to 11 ; Enter the value '0'
+ 
+	./build.sh
+
+ 		
+- Additonal Instructions:
+
+	-When prompted to choose mode when changin GCC version to 11 ; Enter the value '0'
 
 
-## Ccontact the author
+## Contact the author
 
-<email to="mailto:eshansud22@gmail.com">eshansud22@gmail.com</email>
+- <email to="mailto:eshansud22@gmail.com">eshansud22@gmail.com</email>
+
+
