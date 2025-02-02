@@ -11,24 +11,30 @@ as a camera module and using the RGB camera data along with its depth data to cr
 
 ## References (Repos I have used / taken reference from):
 
+### 1. OpenCV4:
+	https://github.com/opencv/opencv
 
-	(OpenCV4): https://github.com/opencv/opencv
+### 2. OpenCV4 Contrib:
+	https://github.com/opencv/opencv_contrib
 
-	(OpenCV4 Contrib): https://github.com/opencv/opencv_contrib
+### 3. ROS2 Image Common:
+	https://github.com/ros-perception/image_common
 
-	(ROS2 Image Common): https://github.com/ros-perception/image_common
+### 4. ROS2 OpenCV:
+	https://github.com/ros-perception/vision_opencv
 
-	(ROS2 OpenCV): https://github.com/ros-perception/vision_opencv
+### 5. Pangolin:
+	https://github.com/stevenlovegrove/Pangolin
 
-	(Pangolin): https://github.com/stevenlovegrove/Pangolin
+### 6. ORB-SLAM3:
+	https://github.com/egdw/ORB_SLAM3_Ubuntu20.04
 
-	(ORB_SLAM3): https://github.com/egdw/ORB_SLAM3_Ubuntu20.04
+### 7. ORBS_SLAM3 ROS2 Wrapper:
+	https://github.com/ozandmrz/orb_slam3_ros2_mono_publisher	[Forked]
 
-	(ORBS_SLAM3 ROS2 Wrapper): https://github.com/ozandmrz/orb_slam3_ros2_mono_publisher	[Forked]
+### 8. Installation of ROS2:
+	https://github.com/ozandmrz/ros2_raspberry_pi_5
 
-
-
-	(Installation of ROS2): https://github.com/ozandmrz/ros2_raspberry_pi_5
 
 
 ## Software Required
@@ -64,21 +70,20 @@ frameworks and any additional dependencies required by the user automatically"
 
 - Clone the project:
 
-	git clone https://github.com/eshan-sud/minor-project
+		git clone https://github.com/eshan-sud/minor-project
 
 
 - Run these conmmands on the shell
 
-	cd ~/minor-project/
-
-	chmod +x build.sh
- 
-	./build.sh
+		cd ~/minor-project/
+		chmod +x build.sh
+		./build.sh
 
  		
 - Additonal Instructions:
 
-	-When prompted to choose mode when changin GCC version to 11 ; Enter the value '0'
+	- When prompted to choose mode when downgrading GCC version to 11 ; Enter the value '0'
+
 
 
 ## Contact the author
