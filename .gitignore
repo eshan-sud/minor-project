@@ -12,6 +12,8 @@ ROS2/
 # Datasets
 Datasets/
 
+# Camera Calibration
+CameraCalibration/
 
 # Tests
 tests/
