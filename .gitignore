@@ -15,5 +15,8 @@ Datasets/
 # Camera Calibration
 CameraCalibration/
 
+# Evalutation
+evaluation/
+
 # Tests
 tests/
