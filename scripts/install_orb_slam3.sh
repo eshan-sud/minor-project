@@ -17,7 +17,7 @@ echo ""
 echo "-----------------Configuring and building Thirdparty/g2o...----------------------"
 echo ""
 mkdir -p build && cd build
-cmake .. && make -j $(nproc - 1)
+cmake .. && make -j
 cd ../../../
 echo ""
 echo "-----------------Uncompress vocabulary...----------------------------------------"
